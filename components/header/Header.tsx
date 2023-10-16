@@ -3,37 +3,33 @@ import { ModeToggle } from "../thememode/theme";
 import Link from "next/link";
 import HomeSvg from "../svg/HomeSvg";
 import ContactForm from "../ContactForm";
-
+import { Button } from "@/components/ui/button";
+import { HomeIcon, PersonIcon, FileIcon, DropdownMenuIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { DropdownMenu, DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 const Header = () => {
   return (
     <header>
-      <nav className="flex w-full md:w-[80%] m-auto p-5 px-10 justify-between items-center">
+      <nav className="absolute z-50 top-0 flex justify-between md:justify-around h-[70px] p-5 items-center w-full border-b ">
         <Link href={"/"}>
           <h1 className="font-bold text-2xl cursor-pointer">VK</h1>
         </Link>
         <ul className="flex justify-center items-center gap-4">
           <li className="border rounded-md p-1 cursor-pointer active:border-svg-icon md:hidden">
-            <HomeSvg />
+            <HamburgerMenuIcon />
           </li>
           <div className="hidden md:flex gap-4">
-            <Link href={"/"} >
-              <p className="font-semibold hover:text-primary cursor-pointer hover:underline">
-                Home
-              </p>
+            <Link href={"/"}>
+              <Button variant="outline"><HomeIcon/></Button>
             </Link>
             <Link href={"/projects"}>
-              <p className="font-semibold hover:text-primary cursor-pointer hover:underline">
-                Projects
-              </p>
+              <Button variant="outline"><FileIcon/></Button>
             </Link>
             <Link href={"/about"}>
-              <p className="font-semibold hover:text-primary cursor-pointer hover:underline">
-                About
-              </p>
+              <Button variant="outline"><PersonIcon/></Button>
             </Link>
-              <p className="font-semibold hover:text-primary cursor-pointer hover:underline">
-                <ContactForm text={"Contact"}/>
-              </p>
+            <p className="font-semibold hover:text-primary cursor-pointer hover:underline">
+             <ContactForm/>
+            </p>
           </div>
           <ModeToggle />
         </ul>
@@ -43,5 +39,3 @@ const Header = () => {
 };
 
 export default Header;
-
-

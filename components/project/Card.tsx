@@ -1,6 +1,6 @@
-import * as React from "react"
+import * as React from "react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -8,29 +8,34 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
-import Image from "next/image"
-import { GitHubLogoIcon } from "@radix-ui/react-icons"
+import Image from "next/image";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 const CardBox = () => {
   return (
-    <Card className="w-[350px]">
+    <Card className="max-w-[280px] hover:scale-105 transition-transform">
       <CardHeader>
-        <Image src={"/web.png"} width={500} height={500} alt="website" className="rounded-md blur-sm hover:blur-0 cursor-pointer"/>
+        <Image
+          src={"/web.png"}
+          width={500}
+          height={500}
+          alt="website"
+          className="rounded-md cursor-pointer"
+        />
       </CardHeader>
       <CardContent>
-      <p className="font-bold">Summarize Articles with
-OPEN-AI GPT-4</p>
+        <p className="font-bold">Summarize Articles with OPEN-AI GPT-4</p>
       </CardContent>
       <CardFooter className="flex justify-between">
         <Button variant="outline" className="flex gap-2">
-          <GitHubLogoIcon/>
+          <GitHubLogoIcon />
           Github
-          </Button>
+        </Button>
         <Button>Visit Page</Button>
       </CardFooter>
     </Card>
-  )
-}
+  );
+};
 
 export default CardBox;

@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
- 
+
+@import url("https://fonts.googleapis.com/css?family=Cubano&display=swap");
 @layer base {
   :root {
     --svg-icon: black;
@@ -27,7 +27,7 @@
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --svg-icon: white;
     --background: 240 10% 3.9%;
@@ -52,9 +52,6 @@
   }
 }
 
-
-
- 
 @layer base {
   * {
     @apply border-border;
@@ -64,7 +61,6 @@
   }
 }
 
-
 @keyframes typing {
   from {
     width: 0;
@@ -73,3 +69,8 @@
     width: 100%;
   }
 }
+
+.title-text {
+  font-family: "Cubano", sans-serif;
+}
+
