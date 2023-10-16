@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator"
 const Hero = () => {
   return (
-    <section className="w-full md:w-[80%] m-auto max-h-min pt-20 flex justify-between">
+    <section className="w-full md:w-[80%] m-auto max-h-min pt-20 justify-between flex flex-col md:flex-row">
       <div className="titlecontainer p-10 text-center md:text-left flex flex-col gap-5 md:gap-3">
         <div className="titlecontainer flex flex-col gap-1">
           <h1 className="scroll-m-20 text-5xl font-semibold tracking-tight lg:text-6xl">

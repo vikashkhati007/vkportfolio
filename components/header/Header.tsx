@@ -2,6 +2,7 @@ import React from "react";
 import { ModeToggle } from "../thememode/theme";
 import Link from "next/link";
 import HomeSvg from "../svg/HomeSvg";
+import ContactForm from "../ContactForm";
 
 const Header = () => {
   return (
@@ -30,6 +31,9 @@ const Header = () => {
                 About
               </p>
             </Link>
+              <p className="font-semibold hover:text-primary cursor-pointer hover:underline">
+                <ContactForm text={"Contact"}/>
+              </p>
           </div>
           <ModeToggle />
         </ul>
@@ -39,3 +43,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
