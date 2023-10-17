@@ -4,6 +4,7 @@ import Link from "next/link";
 import ContactForm from "../ContactForm";
 import { Button } from "@/components/ui/button";
 import { HomeIcon, PersonIcon, FileIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import NavDrawer from "./NavDrawer";
 const Header = () => {
   return (
     <header>
@@ -12,8 +13,8 @@ const Header = () => {
           <h1 className="font-bold text-2xl cursor-pointer">VK</h1>
         </Link>
         <ul className="flex justify-center items-center gap-4">
-          <li className="border rounded-md p-3 cursor-pointer active:border-svg-icon md:hidden">
-            <HamburgerMenuIcon />
+          <li className="border rounded-md px-2 py-1 cursor-pointer active:border-svg-icon md:hidden">
+            <NavDrawer icon={<HamburgerMenuIcon/>}/>
           </li>
           <div className="hidden md:flex gap-4">
             <Link href={"/"}>

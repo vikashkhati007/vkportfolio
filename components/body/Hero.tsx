@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
-    <section className="w-full h-screen flex justify-center items-center">
+    <section className="w-full h-screen flex justify-center items-center text-center">
       <div className="titlecontainer flex flex-col gap-5 justify-center items-center">
         <div className="titlecontainer flex flex-col gap-1">
           <h1 className="title-text scroll-m-20 text-5xl font-semibold tracking-tight lg:text-6xl">

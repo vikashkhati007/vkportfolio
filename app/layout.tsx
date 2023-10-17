@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import { Separator } from "@/components/ui/separator";
+import ProgressBar from "@/components/Progress";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +27,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+           <ProgressBar />
           <Header />
           {children}
           <Footer />

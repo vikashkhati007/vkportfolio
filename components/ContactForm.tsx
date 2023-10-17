@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { postMesaage } from "./postmessage/Post";
 import { MdOutlineMail } from "react-icons/md";
-const ContactForm = async ({ text }: any) => {
+const ContactForm = async () => {
   async function handleSubmit(formData: FormData) {
     "use server";
     const fullname = formData.get("fullname");
