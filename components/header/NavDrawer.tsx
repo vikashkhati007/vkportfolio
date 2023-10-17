@@ -23,8 +23,8 @@ const NavDrawer = ({ icon }: any) => {
         <SheetTrigger>{icon}</SheetTrigger>
         <SheetContent className="w-[10rem]">
           <SheetHeader>
-            <SheetTitle className="opacity-50 my-5 mb-5">Menu</SheetTitle>
-            <SheetDescription className="flex flex-col gap-2 w-full">
+            <SheetTitle className="my-5 mb-5">Menu</SheetTitle>
+            <SheetDescription className="flex flex-col gap-2">
               <Link href={"/"}>
                 <SheetClose>
                   <Button
