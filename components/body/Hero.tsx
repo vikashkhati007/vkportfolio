@@ -12,7 +12,7 @@ const Hero = () => {
             Hey, I am a Full Stack Web Developer
           </p>
         </div>
-        <Button variant="secondary" className=" bg-green-500">GET RESUME</Button>
+        <Button variant="outline" className="bg-black text-white">GET RESUME</Button>
       </div>
     </section>
   );

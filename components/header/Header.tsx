@@ -1,11 +1,9 @@
 import React from "react";
 import { ModeToggle } from "../thememode/theme";
 import Link from "next/link";
-import HomeSvg from "../svg/HomeSvg";
 import ContactForm from "../ContactForm";
 import { Button } from "@/components/ui/button";
-import { HomeIcon, PersonIcon, FileIcon, DropdownMenuIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
-import { DropdownMenu, DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
+import { HomeIcon, PersonIcon, FileIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 const Header = () => {
   return (
     <header>
@@ -14,7 +12,7 @@ const Header = () => {
           <h1 className="font-bold text-2xl cursor-pointer">VK</h1>
         </Link>
         <ul className="flex justify-center items-center gap-4">
-          <li className="border rounded-md p-1 cursor-pointer active:border-svg-icon md:hidden">
+          <li className="border rounded-md p-3 cursor-pointer active:border-svg-icon md:hidden">
             <HamburgerMenuIcon />
           </li>
           <div className="hidden md:flex gap-4">

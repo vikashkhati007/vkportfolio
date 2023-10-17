@@ -11,8 +11,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { postMesaage } from "./postmessage/Post";
-import { ExclamationTriangleIcon, FileIcon } from "@radix-ui/react-icons";
-import {MdOutlineMail} from "react-icons/md";
+import { MdOutlineMail } from "react-icons/md";
 const ContactForm = async ({ text }: any) => {
   async function handleSubmit(formData: FormData) {
     "use server";
@@ -35,14 +34,14 @@ const ContactForm = async ({ text }: any) => {
       <DialogContent className="max-w-[95%] sm:max-w-[425px]">
         <form action={handleSubmit}>
           <DialogHeader>
-            <DialogTitle>Contact Form</DialogTitle>
-            <DialogDescription>Write your Details Here</DialogDescription>
+            <DialogTitle className="text-2xl font-bold">Contact Form</DialogTitle>
+            <DialogDescription className="pb-5 text-xs">enter your information here</DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-2">
             <Input
               id="name"
               type="text"
-              placeholder="enter your name"
+              placeholder="enter your fullname"
               name="fullname"
             />
             <Input

@@ -4,10 +4,8 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 
 import Image from "next/image";
@@ -25,7 +23,7 @@ const CardBox = () => {
         />
       </CardHeader>
       <CardContent>
-        <p className="font-bold">Summarize Articles with OPEN-AI GPT-4</p>
+        <p className="text-lg font-semibold">V-Typing Projects</p>
       </CardContent>
       <CardFooter className="flex justify-between">
         <Button variant="outline" className="flex gap-2">
