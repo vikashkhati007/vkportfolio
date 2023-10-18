@@ -11,8 +11,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { postMesaage } from "./postmessage/Post";
-import { MdOutlineMail } from "react-icons/md";
-const ContactForm = async () => {
+const ContactForm = async ({icon}:any) => {
   async function handleSubmit(formData: FormData) {
     "use server";
     const fullname = formData.get("fullname");
@@ -29,7 +28,7 @@ const ContactForm = async () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant={"outline"}><MdOutlineMail/></Button>
+        <Button variant={"outline"} className="text-primary">{icon}</Button>
       </DialogTrigger>
       <DialogContent className="max-w-[95%] sm:max-w-[425px]">
         <form action={handleSubmit}>

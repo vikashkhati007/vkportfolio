@@ -5,6 +5,7 @@ import ContactForm from "../ContactForm";
 import { Button } from "@/components/ui/button";
 import { HomeIcon, PersonIcon, FileIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import NavDrawer from "./NavDrawer";
+import { MdOutlineMail } from "react-icons/md";
 const Header = () => {
   return (
     <header>
@@ -27,7 +28,7 @@ const Header = () => {
               <Button variant="outline"><PersonIcon/></Button>
             </Link>
             <p className="font-semibold hover:text-primary cursor-pointer hover:underline">
-             <ContactForm/>
+             <ContactForm icon={<MdOutlineMail/>}/>
             </p>
           </div>
           <ModeToggle />

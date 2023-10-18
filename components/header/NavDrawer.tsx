@@ -15,6 +15,7 @@ import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
+import ContactForm from "../ContactForm";
 
 const NavDrawer = ({ icon }: any) => {
   return (
@@ -56,6 +57,7 @@ const NavDrawer = ({ icon }: any) => {
                 </SheetClose>
               </Link>
               <div className="iconcontainer flex flex-col gap-5 absolute bottom-5">
+              <ContactForm icon={"Contact"}/>
                 <p >Social Media</p>
                 <div className="iconcontainer flex gap-5 justify-center items-center">
                   <Link
