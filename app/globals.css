@@ -75,3 +75,22 @@
 }
 
 
+#thunder {
+  animation: thunderStrike 2s ease infinite;
+}
+
+
+@keyframes thunderStrike {
+  0% {
+    transform: rotate(20deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(0deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(20deg);
+    opacity: 1;
+  }
+}
