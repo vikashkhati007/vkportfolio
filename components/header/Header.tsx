@@ -10,7 +10,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header>
-      <nav className="absolute z-50 top-0 flex justify-between md:justify-around h-[70px] p-5 items-center w-full border-b ">
+      <nav  className="absolute z-50 top-0 flex justify-between md:justify-around h-[70px bg-background p-5 items-center w-full border-b ">
         <Link href={"/"} className="group">
           <h1 className="font-bold text-2xl cursor-pointer group-hover:hidden">VK</h1>
           <Image src={"/thunder.png"} width={30} height={30} alt="thunder" id="thunder" className="hidden group-hover:flex"></Image>

@@ -5,7 +5,7 @@ const page = () => {
   return (
     <>
       <div className="w-full h-screen flex justify-around items-center gap-5">
-        <ScrollArea className="w-[90%] md:w-[80%] m-auto h-[70%] rounded-md">
+        <ScrollArea className="w-[100%] md:w-[80%] px-5 m-auto h-[70%] rounded-md">
           <div className="titlecontainer flex flex-col items-center justify-center ">
           <p className="font-bold text-2xl">Projects</p>
           </div>

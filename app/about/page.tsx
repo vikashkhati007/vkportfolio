@@ -4,9 +4,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 const page = () => {
   return (
-    <div className="flex justify-center items-center w-full h-screen">
-      <ScrollArea className="aboutcontainer w-[90%] sm:w-[70%] lg:w-[800px] h-[80%] md:h-[80%] p-3 mt-10 border-none pb-10">
-        <div className="aboutcontainer w-full h-full flex flex-col justify-center items-center md:items-start gap-10">
+    <div className="flex justify-center items-center w-full h-screen overflow-hidden">
+      <ScrollArea className="w-[100%] md:w-[65%] px-10 h-[74%] rounded-md mt-10">
+        <div className="aboutcontainer flex flex-col justify-center items-center md:items-start gap-10">
           <div className="introcontainer">
             <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
               About
@@ -25,7 +25,7 @@ const page = () => {
           </div>
           <div className="quotecontainer">
             <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
-              Currently Working On Next JS ,Tailwind CSS, Typescript. 
+              Currently Working On Next JS ,Tailwind CSS, Typescript.
             </code>
           </div>
         </div>
