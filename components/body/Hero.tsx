@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -15,7 +14,6 @@ const Hero = () => {
           </p>
         </div>
         <Button variant="outline" className="bg-black text-white">
-          <Link href={"https://"}></Link>
           GET RESUME
         </Button>
       </div>
