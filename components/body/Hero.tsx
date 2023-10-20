@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+
 const Hero = () => {
   return (
     <section className="w-full h-screen flex justify-center items-center text-center">
@@ -13,9 +14,10 @@ const Hero = () => {
             Hey, I am a Full Stack Web Developer
           </p>
         </div>
-        <Button variant="outline" className="bg-black text-white" >
+        <Button variant="outline" className="bg-black text-white">
           <Link href={"https://"}></Link>
-          GET RESUME</Button>
+          GET RESUME
+        </Button>
       </div>
     </section>
   );

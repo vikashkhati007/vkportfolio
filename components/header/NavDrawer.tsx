@@ -19,9 +19,8 @@ import ContactForm from "../ContactForm";
 
 const NavDrawer = ({ icon }: any) => {
   return (
-    <div>
       <Sheet>
-        <SheetTrigger>{icon}</SheetTrigger>
+        <SheetTrigger >{icon}</SheetTrigger>
         <SheetContent className="w-[10rem]">
           <SheetHeader>
             <SheetTitle className="my-5 mb-5">Menu</SheetTitle>
@@ -84,7 +83,6 @@ const NavDrawer = ({ icon }: any) => {
           </SheetHeader>
         </SheetContent>
       </Sheet>
-    </div>
   );
 };
 

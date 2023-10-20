@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className="flex justify-center items-center w-full h-screen overflow-hidden">
       <ScrollArea className="w-[100%] md:w-[65%] px-10 h-[74%] rounded-md mt-10">
-        <div className="aboutcontainer flex flex-col justify-center items-center md:items-start gap-10">
+        <div className="aboutcontainer flex flex-col justify-center items-center md:items-start gap-10 pb-10">
           <div className="introcontainer">
             <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
               About
