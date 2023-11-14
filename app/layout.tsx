@@ -2,15 +2,13 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
-import ProgressBar from "@/components/Progress";
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "VK Portfolio",
-  description: "Vikash Khati Portfolio",
+  title: "Vikash Khati - Portfolio",
+  description: "Vikash Khati: Full-stack web developer transforming ideas into exceptional web experiences with expertise in Next.js, TypeScript, and Tailwind CSS, dedicated to pushing the boundaries of innovation and delivering high-performance results.",
 };
 
 export default function RootLayout({
@@ -27,10 +25,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-           <ProgressBar />
-          <Header />
           {children}
-          <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

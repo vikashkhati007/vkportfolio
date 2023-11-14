@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "image": "/projects/tempmail.png",
+      "title": "Temp Mail",
+      "description": "A temporary email generator is a tool that creates disposable email addresses for temporary use. It allows users to receive emails without revealing their personal or permanent email address. These temporary emails usually have a limited lifespan and help protect privacy and avoid spam in online activities.",
+      "link": "https://fake-mail-generator.vercel.app/"
+    },
+    {
+      "image": "/projects/vtyping.png",
+      "title": "V Typing",
+      "description": "VTyping, the go-to platform for honing your typing skills and becoming a typing pro. Whether you're a student, a professional, or just someone who wants to type faster and more accurately, VTyping has got you covered.",
+      "link": "https://vtyping.vercel.app/"
+    },
+    {
+      "image": "/projects/SummarizeArticle.png",
+      "title": "Summarize Article",
+      "description": "Simplify your reading with Summize, an open-source article summarizer that transforms lengthy articles into clear and concise summaries.",
+      "link": "https://summarize-article-drab.vercel.app/"
+    }
+  ]
+}
