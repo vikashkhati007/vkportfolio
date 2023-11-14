@@ -6,7 +6,7 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 This website is built using Next.js and styled with Tailwind CSS. It provides an interactive and responsive design to highlight my web development capabilities.
 
 ## How to Run
-1. Clone the repository: `git clone https://github.com/your-username/your-portfolio.git`
+1. Clone the repository: `git clone https://github.com/vikashkhati007/vkportfolio.git`
 2. Install dependencies: `npm install`
 3. Run the development server: `npm run dev`
 
