@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vikash Khati - Portfolio",
+  title: "Vikash Khati - Portfolio Website",
   description: "Vikash Khati: Full-stack web developer transforming ideas into exceptional web experiences with expertise in Next.js, TypeScript, and Tailwind CSS, dedicated to pushing the boundaries of innovation and delivering high-performance results.",
 };
 
