@@ -30,7 +30,7 @@ const MobileNavbar = () => {
           />
         </SheetTrigger>
       </div>
-      <SheetContent id="sheet" side={"top"} className="w-full rounded-none">
+      <SheetContent id="sheet" side={"top"} className="w-full rounded-none scroll-smooth">
         <SheetHeader>
           <SheetTitle className="my-5 mb-5 text-center">Menu</SheetTitle>
           <SheetDescription className="flex flex-col gap-2 w-full justify-center items-center">
