@@ -19,20 +19,12 @@ const Contact = () => {
     const email = e.currentTarget.email.value;
     const message = e.currentTarget.message.value;
     if(fullname && email && message){
-      const response = await PostMessage(fullname, email, message);
-      if(response){
-       console.log(response);
+      PostMessage(fullname, email, message);
        toast({
          title: "Message Sent",
          description: formattedDate,
-       });
       }
-      else{
-        toast({
-          title: "Message Failed",
-          description: formattedDate,
-        });
-      }
+       );
     }
     else{
       alert("Please fill all the fields");
