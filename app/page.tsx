@@ -5,6 +5,7 @@ import Project from '@/components/body/Project'
 import Skills from '@/components/body/Skills'
 import Footer from '@/components/foot/Footer'
 import Header from '@/components/head/Header'
+import { Analytics } from '@vercel/analytics/react';
 import React from 'react'
 
 const page = () => {
@@ -16,6 +17,7 @@ const page = () => {
       <Skills/>
       <Project/>
       <Contact/>
+      <Analytics/>
       <Footer/>
     </>
   )
