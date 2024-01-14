@@ -27,7 +27,7 @@ const Intro = () => {
         </p>
       </div>
       <div className="resume mt-5">
-        <Link href={"https://links.cuvette.tech/student/65184d3424d1c7ceafba0784"}>
+        <Link href={"https://drive.google.com/file/d/100Krbpod2aco6pOupMPe5cHx6LqFqQIP/view?usp=drive_link"}>
         <button className="transition ease-in-out delay-150 bg-blue-500 hover:scale-110 hover:bg-primary hover:text-background duration-300 text-white px-5 py-3 rounded-md font-semibold relative z-10">
           Get Resume
         </button>
