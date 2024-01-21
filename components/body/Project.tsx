@@ -23,10 +23,17 @@ const Project = () => {
       ref={ref}
       className="w-full max-h-fit flex justify-center items-center overflow-y-scroll pt-24"
     >
-      <div className="flex flex-col gap-5 items-center justify-center bg-background w-[950px]">
+      <div className="flex flex-col gap-5 items-center justify-center bg-background w-[1050px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.projects.slice(0, numBoxes).map((project, index) => (
-            <Box key={index} image ={project.image} htitle = {project.title.split(' ')[0]} title ={project.title.split(' ')[1]} description={project.description} link ={project.link} />
+            <Box
+              key={index}
+              image={project.image}
+              htitle={project.title.split(" ")[0]}
+              title={project.title.split(" ")[1]}
+              description={project.description}
+              link={project.link}
+            />
           ))}
         </div>
         {numBoxes < 9 && ( // show "Show More" button only if not all boxes are shown

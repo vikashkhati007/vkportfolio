@@ -7,11 +7,14 @@ const Skills = () => {
       id="social"
       className="w-full h-screen flex justify-center items-center"
     >
-      <div className="socialcontainer w-[95%] md:w-[800px] bg-white bg-opacity-5 border p-5 rounded-md space-y-5">
-      <h1 className='text-primary font-semibold text-3xl text-center'>
-          <span className='bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent'>Profesional </span>
-           Skills</h1>
-        <div className="workcontainer flex flex-wrap justify-center items-center gap-5">
+      <div className="socialcontainer w-[95%] md:w-[800px] bg-white bg-opacity-5 border-2 border-blue-400 dark:border-none p-5 rounded-md space-y-5">
+        <h1 className="text-primary font-semibold text-3xl text-center">
+          <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            Profesional{" "}
+          </span>
+          Skills
+        </h1>
+        <div className="workcontainer flex flex-wrap justify-center items-center gap-5 ">
           <div className="frameworkdiv p-2 shadow-md rounded-md bg-gradient-to-r from-white to-gray-100 w-14 h-14 md:w-16 md:h-16 flex justify-center items-center">
             <Image
               src={"/socialmedia/html.svg"}

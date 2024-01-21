@@ -2,19 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Box = ({image,htitle,title,description,link}:any) => {
+const Box = ({ image, htitle, title, description, link }: any) => {
   return (
     <>
       <div
         id="project"
-        className="projectcontainer h-[300px] w-[300px] overflow-hidden bg-background rounded-md border-2 border-blue-400 shadow-sm hover:scale-105 transition"
+        className="projectcontainer h-fit w-[90%] m-auto md:m-0 xs:w-[300px] sm:w-[300px] md:h-[300px] overflow-hidden bg-background rounded-md border-2 border-blue-400 shadow-sm hover:scale-105 transition"
       >
         <Image
           width={300}
           height={300}
           src={`${image}`}
           alt="My Image"
-          className="border-b"
+          className="border-b w-full"
         />
         <div className="aboutcontainer space-y-2 p-3">
           <div className="title flex justify-between">
@@ -25,13 +25,13 @@ const Box = ({image,htitle,title,description,link}:any) => {
               {title}
             </h1>
             <Link href={link}>
-            <button className="rounded-s-full border bg-gradient-to-r from-gray-700 to-slate-500 px-2 font-mono font-normal text-white cursor-pointer">
-              LINK
-            </button>
+              <button className="rounded-s-full border bg-gradient-to-r from-gray-700 to-slate-500 px-2 font-mono font-normal text-white cursor-pointer hover:from-blue-300 hover:to-blue-500 ">
+                LINK
+              </button>
             </Link>
           </div>
           <p className="text-sm font-normal text-primary">
-          {description.substring(0, 150) + "..."}
+            {description.substring(0, 150) + "..."}
           </p>
         </div>
       </div>

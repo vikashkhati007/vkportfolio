@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useToast } from "@/components/ui/use-toast";
-import PostMessage from "@/api/sendroute";
+
 const Contact = () => {
   const { toast } = useToast();
   const currentDate = new Date();
@@ -12,30 +12,19 @@ const Contact = () => {
     day: "numeric",
   };
   const formattedDate = currentDate.toLocaleDateString("en-US", options);
-
+  const date: number = Date.now();
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    const fullname =  e.currentTarget.fullname.value;
+    const fullname = e.currentTarget.fullname.value;
     const email = e.currentTarget.email.value;
     const message = e.currentTarget.message.value;
-    if(fullname && email && message){
-      PostMessage(fullname, email, message);
-       toast({
-         title: "Message Sent",
-         description: formattedDate,
-      }
-       );
-    }
-    else{
-      alert("Please fill all the fields");
-    }
   };
   return (
     <section
       id="contact"
-      className="w-full h-screen flex justify-center items-center"
+      className="w-full h-screen flex justify-center items-center "
     >
-      <div className="border p-5 flex flex-col gap-5 justify-center items-center rounded-md shadow-md bg-white bg-opacity-5">
+      <div className="border-2 border-blue-400 dark:border-none p-5 flex flex-col gap-5 justify-center items-center rounded-md shadow-md bg-white bg-opacity-5">
         <h1 className="text-primary font-semibold text-3xl">
           <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
             Contact{" "}
@@ -43,7 +32,7 @@ const Contact = () => {
           Form
         </h1>
         <form
-          className="w-[300px] sm:w-[500px] md:w-[600px] flex flex-col gap-5"
+          className="w-full lg:w-[600px] flex flex-col gap-5"
           onSubmit={handleSubmit}
         >
           <input

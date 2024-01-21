@@ -19,7 +19,7 @@ const page = () => {
       <Contact/>
       <Analytics/>
       <Footer/>
-    </>
+      </>
   )
 }
 

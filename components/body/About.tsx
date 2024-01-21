@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full max-h-fit pt-24 flex justify-center items-center"
+      className="w-full max-h-fit py-24 flex justify-center items-center"
     >
       <div className="aboutcontainer w-[95%] md:w-[800px] space-y-12 ">
         <div className="about flex flex-col md:flex-row justify-center  items-center gap-5">
@@ -34,23 +34,32 @@ const About = () => {
           </p>
         </div>
         <div className="experisecontainer space-y-7">
-        <h1 className='text-primary font-semibold text-2xl text-center md:text-start p-2'>A 
-          <span className='bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent'> Glimpse </span>
-          into My Expertise</h1>
+          <h1 className="text-primary font-semibold text-2xl text-center md:text-start p-2">
+            A
+            <span className="bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
+              {" "}
+              Glimpse{" "}
+            </span>
+            into My Expertise
+          </h1>
           <ul className="list-disc pl-6 mb-4 text-base md:text-lg">
             <li>
               <strong>Framework Maestro:</strong> I specialize in leveraging
-              advanced frameworks, with 
+              advanced frameworks, with
               <span className="underline decoration-yellow-500"> Next.js </span>
-              being a cornerstone in my
-              development arsenal. This allows me to build robust and scalable
-              web applications, ensuring seamless user experiences.
+              being a cornerstone in my development arsenal. This allows me to
+              build robust and scalable web applications, ensuring seamless user
+              experiences.
             </li>
             <li>
-              <strong>Style with Precision:</strong> <span className="underline decoration-blue-500"> Tailwind CSS </span>is my canvas
-              for precision styling. Every project I undertake is not just
-              functional but also a visual masterpiece, meticulously designed to
-              leave a lasting impression.
+              <strong>Style with Precision:</strong>{" "}
+              <span className="underline decoration-blue-500">
+                {" "}
+                Tailwind CSS{" "}
+              </span>
+              is my canvas for precision styling. Every project I undertake is
+              not just functional but also a visual masterpiece, meticulously
+              designed to leave a lasting impression.
             </li>
           </ul>
         </div>
