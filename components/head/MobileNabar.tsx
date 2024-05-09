@@ -16,16 +16,14 @@ import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
-import { ModeToggle } from "./thememode/Mode";
 
 const MobileNavbar = () => {
   return (
     <Sheet>
       <div className="menucontainer flex justify-center items-center gap-3">
-        <ModeToggle />
         <SheetTrigger>
           <HamburgerMenuIcon
-            className="border rounded-md border-opacity-20 border-spacing-1 p-[4px]"
+            className="border rounded-md border-opacity-20 border-spacing-1 p-[4px] px-5"
             style={{ height: "35px", width: "31px" }}
           />
         </SheetTrigger>

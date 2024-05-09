@@ -1,8 +1,6 @@
 import { Lilita_One, Poppins } from "next/font/google";
 import React from "react";
-import { ModeToggle } from "./thememode/Mode";
 import MobileNavbar from "./MobileNabar";
-
 const lilita_One = Lilita_One({ subsets: ["latin-ext"], weight: "400" });
 const poppins = Poppins({ subsets: ["latin-ext"], weight: "400" });
 
@@ -53,7 +51,6 @@ const Header = () => {
                   Contact
                 </a>
               </li>
-              <ModeToggle />
             </ul>
           </div>
           <div className="sm:hidden">

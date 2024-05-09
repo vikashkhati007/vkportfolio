@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { SparklesCore } from "../ui/sparkles";
+import {HeroHighlightText} from "../effects/highlight";
 
 const Intro = () => {
   return (
@@ -7,36 +6,10 @@ const Intro = () => {
       id="intro"
       className="flex flex-col items-center justify-center w-full h-screen bg-background"
     >
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full absolute"
-          particleColor="#FFFFFF"
-        />
       <div className="flex flex-col items-center justify-center relative border-white">
         <div className="textcontainer flex justify-center items-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold text-primary">
-            <span className="bg-gradient-to-l from-blue-700 to-blue-400 text-transparent bg-clip-text">
-              Welcome{" "}
-            </span>
-            to my Portfolio
-          </h1>
         </div>
-        <p className="text-md sm:text-lg md:text-xl text-gray-400 mt-2">
-          I am a Full Stack Website Developer
-        </p>
-      </div>
-      <div className="resume mt-5">
-        <Link
-          href={"https://links.cuvette.tech/student/65184d3424d1c7ceafba0784"}
-        >
-          <button className="transition ease-in-out delay-150 bg-blue-500 hover:scale-110 hover:bg-primary hover:text-background duration-300 text-white px-5 py-3 rounded-md font-semibold relative z-10">
-            Get Resume
-          </button>
-        </Link>
+        <HeroHighlightText/>
       </div>
     </section>
   );
