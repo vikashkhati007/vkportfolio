@@ -25,8 +25,8 @@ export function HeroHighlightText() {
        <h1 className="text-5xl sm:text-6xl md:text-7xl text-center font-bold text-primary ">
             Vikash Khati
           </h1>
-        <Highlight className="text-black text-xl sm:text-2xl md:text-3xl dark:text-white px-2 ">
-          Full Stack Web Developer
+        <Highlight className="pacifico-regular text-black text-xl sm:text-2xl md:text-3xl dark:text-white px-2 backdrop-blur-sm">
+          full stack web developer
         </Highlight>
       </motion.h1>
     </HeroHighlight>

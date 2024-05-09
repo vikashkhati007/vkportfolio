@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css?family=Cubano&display=swap");
-
+@font-face {
+  font-family: 'vkspecial'; 
+  src: url('../public/pacifico.ttf') format('truetype'); 
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -144,3 +147,9 @@ html {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.pacifico-regular {
+  font-family: 'vkspecial', sans-serif;
+  font-weight: 200;
+}
+
