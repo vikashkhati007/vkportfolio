@@ -4,11 +4,9 @@ const Intro = () => {
   return (
     <section
       id="intro"
-      className="flex flex-col items-center justify-center w-full h-screen bg-background"
+      className="flex flex-col items-center justify-center w-full h-screen"
     >
       <div className="flex flex-col items-center justify-center relative border-white">
-        <div className="textcontainer flex justify-center items-center">
-        </div>
         <HeroHighlightText/>
       </div>
     </section>

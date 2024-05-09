@@ -33,7 +33,7 @@ export default function RootLayout({
         minSize={0.6}
         maxSize={1.4}
         particleDensity={30}
-        className="w-full h-full fixed"
+        className="w-full h-full fixed -z-10"
         particleColor="#FFFFFF"
       />
           {children}

@@ -1,22 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { HoverBorderGradient } from "../../ui/moving-border";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 const Box = ({ image, htitle, title, description, link }: any) => {
   return (
     <>
-      <HoverBorderGradient
-        containerClassName="rounded"
-        as="button"
-        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-      >
-      
+       <BackgroundGradient>
         <div
           id="project"
-          className="projectcontainer group h-fit m-auto md:m-0 overflow-hidden bg-background rounded-md shadow-sm hover:scale-105 transition"
+          className="projectcontainer group w-[300px] md:w-[350px] lg:w-fit h-fit m-auto md:m-0 overflow-hidden bg-background rounded-md shadow-sm transition"
         >
-
           <Image
             width={300}
             height={300}
@@ -43,7 +37,7 @@ const Box = ({ image, htitle, title, description, link }: any) => {
             </p>
           </div>
         </div>
-      </HoverBorderGradient>
+      </BackgroundGradient>
     </>
   );
 };
