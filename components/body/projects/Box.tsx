@@ -7,13 +7,14 @@ const Box = ({ image, htitle, title, description, link }: any) => {
   return (
     <>
       <HoverBorderGradient
-        containerClassName="rounded-sm"
+        containerClassName="rounded"
         as="button"
-        className="dark:bg-black bg-white text-black dark:text-white"
+        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
       >
+      
         <div
           id="project"
-          className="projectcontainer h-fit w-[90%] m-auto md:m-0 xs:w-[300px] sm:w-[300px] md:h-[300px] overflow-hidden bg-background rounded-md shadow-sm hover:scale-105 transition"
+          className="projectcontainer group h-fit m-auto md:m-0 overflow-hidden bg-background rounded-md shadow-sm hover:scale-105 transition"
         >
 
           <Image

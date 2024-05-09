@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SparklesPreview } from "../effects/sparkle";
+import { SparklesCore } from "../ui/sparkles";
 
 const Intro = () => {
   return (
@@ -7,12 +7,16 @@ const Intro = () => {
       id="intro"
       className="flex flex-col items-center justify-center w-full h-screen bg-background"
     >
-      <div
-        id="texture"
-        className="backgroundtexture w-full h-screen absolute"
-      ></div>
-      <SparklesPreview />
-      <div className="flex flex-col items-center justify-center relative dark:bg-black drk:bg-blend-screen border-white">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full absolute"
+          particleColor="#FFFFFF"
+        />
+      <div className="flex flex-col items-center justify-center relative border-white">
         <div className="textcontainer flex justify-center items-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold text-primary">
             <span className="bg-gradient-to-l from-blue-700 to-blue-400 text-transparent bg-clip-text">
