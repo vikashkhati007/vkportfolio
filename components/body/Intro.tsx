@@ -22,12 +22,12 @@ const Intro = () => {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-snug text-center mx-auto "
+        className="md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl text-center mx-auto "
       >
-       <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-primary mb-4">
+       <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-primary mb-3 lg:mb-0 ">
             Vikash Khati
           </h1>
-        <Highlight className="pacifico-regular text-black text-xl sm:text-2xl md:text-3xl dark:text-white px-2 backdrop-blur-sm mx-auto">
+        <Highlight className="pacifico-regular text-black text-xl sm:text-2xl md:text-3xl dark:text-white px-2 backdrop-blur-sm flex justify-center items-center mx-10">
           full stack web developer
         </Highlight>
       </motion.h1>
