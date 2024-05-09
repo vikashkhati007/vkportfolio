@@ -20,7 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -33,7 +32,7 @@ export default function RootLayout({
         background="transparent"
         minSize={0.6}
         maxSize={1.4}
-        particleDensity={30}
+        particleDensity={25}
         className="w-full h-full fixed -z-10"
         particleColor="#FFFFFF"
       />
