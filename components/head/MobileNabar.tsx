@@ -22,10 +22,7 @@ const MobileNavbar = () => {
     <Sheet>
       <div className="menucontainer flex justify-center items-center gap-3">
         <SheetTrigger>
-          <HamburgerMenuIcon
-            className="border rounded-md border-opacity-20 border-spacing-1 p-[4px] px-5"
-            style={{ height: "35px", width: "31px" }}
-          />
+          <HamburgerMenuIcon width={15} height={15}/>
         </SheetTrigger>
       </div>
       <SheetContent
