@@ -17,7 +17,7 @@
       "title": "Summarize Article",
       "description": "Simplify your reading with Summize, an open-source article summarizer that transforms lengthy articles into clear and concise summaries.",
       "link": "https://summarize-article-drab.vercel.app/"
-    }
+    },
     {
       "image": "/projects/vDrawing.png",
       "title": "V Drawing",
