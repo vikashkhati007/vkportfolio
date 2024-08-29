@@ -10,8 +10,8 @@ const About = () => {
       <div className="aboutcontainer w-[95%] md:w-[800px] space-y-12 ">
         <div className="about flex flex-col md:flex-row justify-center  items-center gap-5">
           <Image
-            className="rounded-full flex-shrink-0"
-            src={"/200w.gif"}
+            className="rounded-full flex-shrink-0 border-2 "
+            src={"https://avatars.githubusercontent.com/u/124573409?v=4"}
             width={150}
             height={150}
             alt="image"
