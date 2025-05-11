@@ -1,9 +1,15 @@
 {
   "projects": [
-    {
+     {
+      "image": "/projects/VastraUI.png",
+      "title": "Vastra UI",
+      "description": "Vastra UI is a modern, lightweight component library designed for developers who value speed and simplicity. Built with React.js, Framer Motion, and Tailwind CSS, Vastra UI empowers you to quickly create stunning user interfaces with ease. ",
+      "link": "https://cartoops.vercel.app/"
+    },
+     {
       "image": "/projects/Cartoops.png",
       "title": "Cartoops",
-      "description": "Cartoops is a dynamic and user-friendly e-commerce web application designed to provide a seamless online shopping experience. With its intuitive interface, users can effortlessly browse through a wide range of products, add items to their cart, and make secure purchases. Cartoops offers personalized recommendations, easy navigation.",
+      "description": "Cartoops is a dynamic and user-friendly e-commerce web application designed to provide a seamless online shopping experience. With its intuitive interface, users can effortlessly browse through a wide range of products, add items to their cart, and make secure purchases. Cartoops offers personalized recommendations, easy navigation. ",
       "link": "https://cartoops.vercel.app/"
     },
     {
@@ -29,6 +35,6 @@
       "title": "V Drawing",
       "description": "This is a lightweight web-based drawing tool that allows users to create simple drawings and sketches. The application provides a canvas where users can use various drawing tools, colors, and brush sizes to express their creativity. It's designed to be user-friendly and accessible.",
       "link": "https://vdrawingtool.vercel.app/"
-    },
+    }
   ]
 }
