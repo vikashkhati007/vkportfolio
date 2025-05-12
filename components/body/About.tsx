@@ -6,17 +6,22 @@ const About = () => {
     <section
       id="about"
       className="w-full max-h-fit py-24 flex justify-center items-center"
+      aria-label="About Vikash Khati"
+      itemScope
+      itemType="http://schema.org/Person"
     >
       <div className="aboutcontainer w-[95%] md:w-[800px] space-y-12 ">
-        <div className="about flex flex-col md:flex-row justify-center  items-center gap-5">
+        <div className="about flex flex-col md:flex-row justify-center items-center gap-5">
           <Image
-            className="rounded-full flex-shrink-0 border-2 "
+            className="rounded-full flex-shrink-0 border-2"
             src={"https://avatars.githubusercontent.com/u/124573409?v=4"}
             width={150}
             height={150}
-            alt="image"
-          ></Image>
-          <p className="pt-2 w-fit font-semibold text-lg md:text-xl text-center md:text-start">
+            alt="Vikash Khati - Full Stack Developer"
+            itemProp="image"
+            priority
+          />
+          <p className="pt-2 w-fit font-semibold text-lg md:text-xl text-center md:text-start" itemProp="description">
             Hey, I am{" "}
             <span className="underline decoration-red-500">Vikash Khati</span> ,
             a seasoned{" "}

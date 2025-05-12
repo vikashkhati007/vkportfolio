@@ -22,9 +22,13 @@ const Project = () => {
       id="projects"
       ref={ref}
       className="w-full max-h-fit flex justify-center items-center overflow-y-scroll pt-24"
+      aria-label="Portfolio Projects"
+      itemScope
+      itemType="http://schema.org/CollectionPage"
     >
       <div className="flex flex-col gap-5 items-center justify-center bg-background w-[1050px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h2 className="text-3xl font-bold mb-8" itemProp="name">Featured Projects</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" itemProp="mainEntity" itemScope itemType="http://schema.org/ItemList">
           {data.projects.slice(0, numBoxes).map((project, index) => (
             <Box
               key={index}
@@ -33,6 +37,7 @@ const Project = () => {
               title={project.title.split(" ")[1]}
               description={project.description}
               link={project.link}
+              itemProp="itemListElement"
             />
           ))}
         </div>
