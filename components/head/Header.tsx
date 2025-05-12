@@ -1,6 +1,7 @@
 import { Lilita_One, Poppins } from "next/font/google";
 import React from "react";
 import MobileNavbar from "./MobileNabar";
+import { Metadata } from "next";
 const lilita_One = Lilita_One({ subsets: ["latin-ext"], weight: "400" });
 const poppins = Poppins({ subsets: ["latin-ext"], weight: "400" });
 
@@ -62,4 +63,27 @@ const Header = () => {
   );
 };
 
+// Add social media meta tags in your layout.tsx
+export const metadata: Metadata = {
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://vikashkhati.com',
+    title: 'Vikash Khati - Full Stack Developer',
+    description: 'Portfolio of Vikash Khati, Full Stack Web Developer',
+    images: [
+      {
+        url: 'https://vikashkhati.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Vikash Khati'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@vikashkhati',
+    creator: '@vikashkhati'
+  }
+}
 export default Header;
