@@ -3,8 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster"
-import { SparklesCore } from "../components/ui/sparkles";
-
+import { Particles } from "../components/ui/sparkles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,15 +40,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SparklesCore
-        id="tsparticlesfullpage"
-        background="transparent"
-        minSize={0.6}
-        maxSize={1.4}
-        particleDensity={25}
-        className="w-full h-full fixed -z-10"
-        particleColor="#FFFFFF"
-      />
+         <Particles className="fixed inset-0 w-full h-full z-[-1]"/>
+      {/* <TwinklingStarsBackground /> */}
           {children}
           <Toaster />
         </ThemeProvider>
